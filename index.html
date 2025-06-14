@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curoos - Kue Kering Lezat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #f8c471;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      margin: 0;
+      color: #6e2c00;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #6e2c00;
+      font-weight: bold;
+    }
+
+    header {
+      background-image: url('https://source.unsplash.com/1600x600/?cookies,bakery');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 150px 20px;
+    }
+
+    header h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header a {
+      background-color: #f8c471;
+      color: #6e2c00;
+      padding: 12px 25px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #about {
+      text-align: center;
+    }
+
+    #products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #fef5e7;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    #testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial {
+      background-color: #fbe9e7;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .testimonial img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #f8c471;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #6e2c00;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Chef Indra</h1>
+    <ul>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#products">Produk</a></li>
+      <li><a href="#testimonials">Testimoni</a></li>
+      <li><a href="#footer">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h2>Kue Kering Lezat dari Curoos</h2>
+    <a href="#products">Lihat Produk</a>
+  </header>
+
+  <!-- Tentang Kami -->
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Curoos adalah usaha rumahan yang menghadirkan kue kering dengan cita rasa khas dan bahan berkualitas tinggi. Kami menghadirkan berbagai jenis kue yang cocok untuk momen spesial dan sehari-hari.</p>
+  </section>
+
+  <!-- Produk -->
+  <section id="products">
+    <h2 style="text-align:center;">Produk Kami</h2>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?pineapple,tart" alt="Nastar">
+      <h3>Nastar</h3>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?cheese,cookies" alt="Kastengel">
+      <h3>Kastengel</h3>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?snowball,cookies" alt="Kue Salju">
+      <h3>Kue Salju</h3>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?sago,cookies" alt="Sagu Keju">
+      <h3>Sagu Keju</h3>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?butter,cookies" alt="Kue Semprit">
+      <h3>Kue Semprit</h3>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?chocolate,cookies" alt="Kue Chocochips">
+      <h3>Kue Chocochips</h3>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimonials">
+    <h2 style="text-align:center;">Apa Kata Pelanggan Kami</h2>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ayu">
+      <p>"Nastarnya enak banget! Lembut dan manisnya pas."</p>
+      <strong>Ayu Lestari</strong>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Budi">
+      <p>"Saya suka chocochips-nya, renyah dan coklatnya terasa!"</p>
+      <strong>Budi Santoso</strong>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Dewi">
+      <p>"Pesenan saya cepat sampai, dan rasanya luar biasa."</p>
+      <strong>Dewi Anggraini</strong>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="Rizky">
+      <p>"Kue kastengelnya juara! Cocok buat Lebaran."</p>
+      <strong>Rizky Hadi</strong>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>Hubungi Kami:</p>
+    <a href="https://wa.me/6282118115751" target="_blank">WhatsApp</a>
+    |
+    <a href="https://instagram.com/curoos.id" target="_blank">Instagram</a>
+    <p>&copy; 2025 Curoos. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
